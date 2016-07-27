@@ -1,0 +1,19 @@
+// vars
+$green: #8cc34b;
+$black: #212121;
+$grey: #727272;
+$blue: #03a9f4;
+$white: #fff;
+
+// layout
+@import "_misc/normalize";
+@import "_misc/fonts";
+@import "_misc/font-awesome";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+// styles
+@import "sections/header";
+@import "sections/about";
+@import "sections/courses";
+@import "sections/footer";

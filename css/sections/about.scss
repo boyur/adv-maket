@@ -1,0 +1,48 @@
+.about__info {
+  margin-bottom: 50px;
+  @extend %clearfix;
+}
+
+.about__item {
+  float: left;
+  width: 47%;
+  margin-right: 4%;
+  @extend %clearfix;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.about__item-left, .about__item-right {
+  float: left;
+}
+
+.about__item-left {
+  width: 33%;
+  text-align: center;
+}
+
+.about__item-pic {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.about__item-right {
+  width: 64%;
+  margin-left: 3%;
+}
+
+.about__title {
+  @include fira();
+  font-size: 21px;
+  color: $black;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about__desc {
+  @include fira(light);
+  font-size: 14px;
+  color: $grey;
+}
