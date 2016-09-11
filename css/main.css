@@ -370,24 +370,28 @@ textarea {
   src: url("../fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff"), url("../fonts/firasans-regular-webfont.ttf") format("truetype"), url("../fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'fira_sansbold';
   src: url("../fonts/firasans-bold-webfont.eot");
   src: url("../fonts/firasans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-bold-webfont.woff2") format("woff2"), url("../fonts/firasans-bold-webfont.woff") format("woff"), url("../fonts/firasans-bold-webfont.ttf") format("truetype"), url("../fonts/firasans-bold-webfont.svg#fira_sansbold") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'fira_sanslight';
   src: url("../fonts/firasans-light-webfont.eot");
   src: url("../fonts/firasans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-light-webfont.woff2") format("woff2"), url("../fonts/firasans-light-webfont.woff") format("woff"), url("../fonts/firasans-light-webfont.ttf") format("truetype"), url("../fonts/firasans-light-webfont.svg#fira_sanslight") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'fira_sansmedium';
   src: url("../fonts/firasans-medium-webfont.eot");
   src: url("../fonts/firasans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-medium-webfont.woff2") format("woff2"), url("../fonts/firasans-medium-webfont.woff") format("woff"), url("../fonts/firasans-medium-webfont.ttf") format("truetype"), url("../fonts/firasans-medium-webfont.svg#fira_sansmedium") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -400,6 +404,7 @@ textarea {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -493,6 +498,7 @@ textarea {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -500,34 +506,30 @@ textarea {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -535,7 +537,8 @@ textarea {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none; }
+  -webkit-filter: none;
+          filter: none; }
 
 .fa-stack {
   position: relative;
@@ -2470,11 +2473,11 @@ textarea {
 .about__info:after, .about__item:after, .about__info:before, .about__item:before {
   content: "";
   display: table; }
+
 .about__info:after, .about__item:after {
   clear: both; }
 
 * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body, html {
@@ -2700,6 +2703,7 @@ footer {
     font-size: 14px; }
 
 .courses__item--active {
+  -webkit-transition: 1s;
   transition: 1s;
   opacity: 1; }
   .courses__item--active .courses__shadow {
@@ -2745,6 +2749,7 @@ footer {
     right: 0;
     position: absolute;
     background: #8cc34b;
+    -webkit-transition: bottom 1s;
     transition: bottom 1s; }
 
 .courses__img-pic {
@@ -2760,6 +2765,7 @@ footer {
   font-size: 14px;
   font-family: 'fira_sansregular';
   font-family: 'fira_sanslight'; }
+
 .section__text a {
   color: #03a9f4; }
   .section__text a:hover {
@@ -2769,6 +2775,7 @@ footer {
   margin-bottom: 10px;
   color: #212121;
   font-size: 21px;
+  -webkit-transition: .3s;
   transition: .3s; }
 
 .courses__text-content {
@@ -2793,6 +2800,7 @@ input[type="checkbox"] + label:before {
   font-family: FontAwesome, serif;
   content: "\f00c";
   color: #f6f7f2;
+  display: -ms-grid;
   display: grid;
   border: 2px solid #b6b6b6;
   width: 16px;
